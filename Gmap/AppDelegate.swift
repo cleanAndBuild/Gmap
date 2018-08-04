@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    let googleMapsAPIKey = "AIzaSyASHLLrZkMu1qJnjbH_45z9nOaR05QEKiI"
+    //APIキーの取得
+    let googleMapsAPIKey = "ここに取得したAPIキーをコピー＆ペースト"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
