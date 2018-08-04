@@ -12,6 +12,10 @@
 		1C3DCFCD2115836D004B26AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C3DCFCB2115836D004B26AB /* Main.storyboard */; };
 		1C3DCFCF2115836E004B26AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C3DCFCE2115836E004B26AB /* Assets.xcassets */; };
 		1C3DCFD22115836E004B26AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C3DCFD02115836E004B26AB /* LaunchScreen.storyboard */; };
+		1C787FC221158673006D66EC /* marker_r@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C787FBF21158672006D66EC /* marker_r@2x.png */; };
+		1C787FC321158673006D66EC /* tool_marker_plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C787FC021158672006D66EC /* tool_marker_plus@2x.png */; };
+		1C787FC421158673006D66EC /* target_R@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C787FC121158672006D66EC /* target_R@2x.png */; };
+		616CC983D90C3EA1845E5053 /* Pods_Gmap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78AF062CAB54614572B7884 /* Pods_Gmap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,12 @@
 		1C3DCFCE2115836E004B26AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C3DCFD12115836E004B26AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C3DCFD32115836E004B26AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C787FBF21158672006D66EC /* marker_r@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marker_r@2x.png"; sourceTree = "<group>"; };
+		1C787FC021158672006D66EC /* tool_marker_plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tool_marker_plus@2x.png"; sourceTree = "<group>"; };
+		1C787FC121158672006D66EC /* target_R@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "target_R@2x.png"; sourceTree = "<group>"; };
+		2663EC2708AE44534213FF41 /* Pods-Gmap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gmap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gmap/Pods-Gmap.release.xcconfig"; sourceTree = "<group>"; };
+		808DE9A8D5AC6CE18F3B0385 /* Pods-Gmap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gmap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gmap/Pods-Gmap.debug.xcconfig"; sourceTree = "<group>"; };
+		F78AF062CAB54614572B7884 /* Pods_Gmap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gmap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				616CC983D90C3EA1845E5053 /* Pods_Gmap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				1C3DCFC62115836D004B26AB /* Gmap */,
 				1C3DCFC52115836D004B26AB /* Products */,
+				C01422D3F0C2AE7C397196F1 /* Pods */,
+				4C5BF84CF4A2FCED28299915 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,9 +72,29 @@
 				1C3DCFCB2115836D004B26AB /* Main.storyboard */,
 				1C3DCFCE2115836E004B26AB /* Assets.xcassets */,
 				1C3DCFD02115836E004B26AB /* LaunchScreen.storyboard */,
+				1C787FBF21158672006D66EC /* marker_r@2x.png */,
+				1C787FC121158672006D66EC /* target_R@2x.png */,
+				1C787FC021158672006D66EC /* tool_marker_plus@2x.png */,
 				1C3DCFD32115836E004B26AB /* Info.plist */,
 			);
 			path = Gmap;
+			sourceTree = "<group>";
+		};
+		4C5BF84CF4A2FCED28299915 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F78AF062CAB54614572B7884 /* Pods_Gmap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C01422D3F0C2AE7C397196F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				808DE9A8D5AC6CE18F3B0385 /* Pods-Gmap.debug.xcconfig */,
+				2663EC2708AE44534213FF41 /* Pods-Gmap.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C3DCFD62115836E004B26AB /* Build configuration list for PBXNativeTarget "Gmap" */;
 			buildPhases = (
+				432054BE57875B952BFBDC3D /* [CP] Check Pods Manifest.lock */,
 				1C3DCFC02115836D004B26AB /* Sources */,
 				1C3DCFC12115836D004B26AB /* Frameworks */,
 				1C3DCFC22115836D004B26AB /* Resources */,
+				8894D217ECF4C1E4813B7BDE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,13 +157,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C787FC321158673006D66EC /* tool_marker_plus@2x.png in Resources */,
 				1C3DCFD22115836E004B26AB /* LaunchScreen.storyboard in Resources */,
+				1C787FC421158673006D66EC /* target_R@2x.png in Resources */,
 				1C3DCFCF2115836E004B26AB /* Assets.xcassets in Resources */,
 				1C3DCFCD2115836D004B26AB /* Main.storyboard in Resources */,
+				1C787FC221158673006D66EC /* marker_r@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		432054BE57875B952BFBDC3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gmap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8894D217ECF4C1E4813B7BDE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gmap/Pods-Gmap-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gmap/Pods-Gmap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C3DCFC02115836D004B26AB /* Sources */ = {
@@ -278,16 +355,18 @@
 		};
 		1C3DCFD72115836E004B26AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 808DE9A8D5AC6CE18F3B0385 /* Pods-Gmap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NCY5BEZ37J;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Gmap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.yako.Gmap;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.StepAppSchool.Gmap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,16 +375,18 @@
 		};
 		1C3DCFD82115836E004B26AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2663EC2708AE44534213FF41 /* Pods-Gmap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NCY5BEZ37J;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Gmap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.yako.Gmap;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.StepAppSchool.Gmap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
