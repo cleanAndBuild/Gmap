@@ -12,7 +12,7 @@ import GoogleMaps
 class ViewController: UIViewController {
     var _googleMap : GMSMapView!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //カメラを作る
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         self.view.addSubview(_googleMap)
         self.view.sendSubview(toBack: _googleMap)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
